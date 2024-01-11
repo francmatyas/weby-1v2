@@ -21,3 +21,10 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+.background,
+section,
+footer {
+  background-color: var(--bgColor);
+  color: var(--textColor);
+}

@@ -1,4 +1,4 @@
 export default function Gallery() {
-    return <div>gallery</div>;
+    return <div className="page gallery">gallery</div>;
   }
   

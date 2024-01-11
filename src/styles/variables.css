@@ -1,3 +1,9 @@
 :root {
-  --bgColor: #131a0b;
+  --bgColor: #1c2611; /* 131a0b */
+  --cardColor: #2F401D;
+  --textColor: #fefae0;
+
+  --primaryColor: #606c38;
+
+  --accentColor: #dda15e;
 }

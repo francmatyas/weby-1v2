@@ -1,9 +1,0 @@
-.FAQItem {
-  padding: 1rem;
-  border: 1px solid orange;
-  border-radius: 4px;
-
-  display: flex;
-  flex-flow: column;
-  gap: 8px;
-}

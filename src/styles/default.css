@@ -4,3 +4,10 @@
 @import "header";
 @import "navigation";
 @import "elements";
+@import "about";
+@import "places";
+@import "faq";
+@import "contact";
+@import "gallery";
+@import "home";
+@import "layout";

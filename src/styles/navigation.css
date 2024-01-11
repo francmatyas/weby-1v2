@@ -11,12 +11,12 @@
   list-style: none;
 }
 a:visited {
-  color: #fff;
+  color: var(--textColor);
 }
 .navListItem {
   text-transform: uppercase;
   font-weight: 500;
-  color: #fff;
+  color: var(--textColor);
 
   transition: color 0.2s ease-in-out;
 
@@ -27,7 +27,7 @@ a:visited {
 .navListItemUnderline {
   height: 2px;
   width: 0px;
-  background-color: #606c38;
+  background-color: var(--accentColor);
   transition: background-color 0.2s ease-in-out, width 0.3s ease-in-out;
 }
 .navListItem {
@@ -38,8 +38,4 @@ a:visited {
       width: 75%;
     }
   }
-}
-
-.header.headerFill .navListItemUnderline {
-  background-color: #fefae0;
 }
