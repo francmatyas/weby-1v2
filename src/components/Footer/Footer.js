@@ -1,17 +1,25 @@
 import logo from "@assets/logo.png";
+import { HiOutlineMail, HiOutlineGlobeAlt } from "react-icons/hi";
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footerRow">
-        <img src={logo} className="footerLogo" />
+        <img src={logo} className="footerLogo" alt="logo" />
+        <div className="footerCol">
+          <h3>CestaBezKonce.cz</h3>
+          <p>Studentský zápočtový projekt</p>
+          <p>Aktualizováno 10.1.2024</p>
+        </div>
         <div className="footerCol">
           <h3>Provozovatel</h3>
           <p>Matyáš Franc</p>
-          <p>
+          <p className="footerLine">
+            <HiOutlineMail size={20} />
             <a href="mailto:francma2@uhk.cz">francma2@uhk.cz</a>
           </p>
-          <p>
+          <p className="footerLine">
+            <HiOutlineGlobeAlt size={20} />
             <a
               href="https://www.francmatyas.com/"
               target="_blank"
@@ -20,11 +28,6 @@ export default function Footer() {
               www.francmatyas.com
             </a>
           </p>
-        </div>
-        <div className="footerCol">
-          <h3>CestaBezKonce.cz</h3>
-          <p>Jedná se studentský zápočtový projekt</p>
-          <p>Aktualizováno 10.1.2024</p>
         </div>
         <div className="footerCol">
           <h3>Zdroje</h3>

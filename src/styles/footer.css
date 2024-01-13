@@ -23,3 +23,9 @@
   justify-content: center;
   color: gray;
 }
+.footerLine {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 8px;
+  align-items: center;
+}
