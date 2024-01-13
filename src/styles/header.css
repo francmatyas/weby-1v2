@@ -16,11 +16,11 @@
 }
 .headerSocialsItem {
   list-style: none;
-  color: #999;
+ /*  color: #999; */
 }
 .headerSocialsItem a:focus,
 .headerSocialsItem:hover a {
-  color: #ddd;
+  /* color: #ddd; */
 }
 .headerFill {
   background-color: var(--bgColor);

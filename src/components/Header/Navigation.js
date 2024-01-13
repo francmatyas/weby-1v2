@@ -33,7 +33,7 @@ export default function Navigation() {
       <ul className={"navList"}>
         <li>
           <Link to="/">
-            <img height={64} src={logo} alt="logo" className={"navLogo"} />
+            <img height={48} src={logo} alt="logo" className={"navLogo"} />
           </Link>
         </li>
         {Object.values(links).map((link) => (

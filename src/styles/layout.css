@@ -74,3 +74,13 @@ p {
   font-weight: 400;
   font-family: "Montserrat" -apple-system, Roboto, sans-serif;
 }
+
+a {
+  color: var(--textColor);
+  transition: color 0.2s ease-in-out;
+
+  &:focus,
+  &:hover {
+    color: var(--accentColor);
+  }
+}

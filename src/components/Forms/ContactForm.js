@@ -1,11 +1,12 @@
 "use client";
 
-import styles from "./contactForm.module.css";
 import { useState } from "react";
 import Input from "../Elements/Input";
 import Button from "../Elements/Button";
 
-export default function ContactForm() {
+export default function ContactForm(props) {
+  const { className = "" } = props;
+
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -19,10 +20,11 @@ export default function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(form);
+    alert("Odesláno");
   };
 
   return (
-    <form className={styles.contactForm} onSubmit={handleSubmit}>
+    <form className={`contactForm card ${className}`} onSubmit={handleSubmit}>
       <Input
         label="Name"
         value={form.name}
@@ -51,9 +53,10 @@ export default function ContactForm() {
         name="message"
         placeholder="Hello world!"
         required
+        rows={7}
       />
 
-      <Button type="submit">Send</Button>
+      <Button type="submit">Odeslat</Button>
     </form>
   );
 }

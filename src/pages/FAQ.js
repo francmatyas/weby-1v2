@@ -6,58 +6,62 @@ import FAQItem from "@components/Elements/FAQItem";
 export default function FAQ() {
   const faqs = [
     {
-      question: "Jak jste se poznali a začali cestovat společně?",
+      question: "Jak jsme začali cestovat?",
       answer:
-        "Potkali jsme se během výměnného programu ve škole v Japonsku a zjistili jsme, že máme společnou vášeň pro objevování nových míst. Od té doby jsme se stali neodloučitelným týmem dobrodruhů.",
+        "Začali jsme svou cestu jako spolužáci s nezdolnou touhou po dobrodružství. Náš příběh začíná ve školních lavicích a rozvíjí se s každým novým objevem.",
     },
     {
-      question: "Jak vybíráte destinace pro svá dobrodružství?",
+      question: "Jak nám můžete představit svá dobrodružství?",
       answer:
-        "Destinace se vybíráme podle různorodosti a zajímavosti. Snažíme se spojit krásu přírody s kulturním bohatstvím a zajímavými zážitky.",
+        "Sledujte náš blog a sociální média pro denní dávku inspirace. Fotografie, příběhy a tipy na cestování vám přiblíží naše zážitky a nabídnou vám pohled na svět našima očima.",
     },
     {
-      question: "Jaké jsou vaše nejoblíbenější tipy pro levné cestování?",
+      question: " Máte nějaké oblíbené destinace?",
       answer:
-        "Prvním tipem je plánování předem – hledání výhodných nabídek na ubytování a letenky. Dále se snažíme jíst místní jídla, což často šetří peníze a přináší autentický zážitek.",
+        "Ano, máme! Milujeme horizontální rozmanitost naší planety. Od himálajských vrcholů po pralesy Amazonského pralesa – každé místo nás oslovuje svým vlastním způsobem.",
     },
     {
-      question:
-        "Jak udržujete rovnováhu mezi dobrodružstvím a studiem ve škole?",
+      question: "Jak mohu navázat kontakt?",
       answer:
-        "Rovnováha mezi studiem a cestováním není vždy snadná, ale snažíme se plánovat naše cesty tak, abychom minimalizovali vliv na školní povinnosti. Předem si dobře organizujeme čas.",
+        "Jsme rádi, když se na nás obracíte! Vyplňte kontaktní formulář na naší stránce Kontakt nebo nám pište přímo na contact@adventure.com.",
     },
     {
-      question: "Který zážitek z vašich cest vás nejvíce ovlivnil?",
+      question: "Můžeme sdílet naše vlastní cestovatelské příběhy s vámi?",
       answer:
-        "Asi nejvíce nás ovlivnilo setkání s místními komunitami v Indonésii. Je úžasné vidět, jak lidé žijí v jiných částech světa, a to nás neustále inspiruje.",
+        "Ano, prosím! Rádi bychom slyšeli o vašich dobrodružstvích. Dejte nám vědět prostřednictvím sociálních médii.",
     },
     {
-      question: "Máte nějaké tipy pro začínající cestovatele?",
+      question: "Jak vás mohu podpořit?",
       answer:
-        "Rozhodně! Začněte s menšími dobrodružstvími, naučte se respektovat a rozumět místní kultuře, a vždy si přineste kousíček místního jazyka. A nebojte se vydat mimo turisticky oblíbené trasy.",
-    },
-    {
-      question:
-        "Jaký byl váš nejnáročnější, ale zároveň nejzajímavější moment na cestách?",
-      answer:
-        "Nejnáročnější byl asi trek v Pakistánu přes Karákóram, ale právě tam jsme zažili něco neuvěřitelného – setkání s místními průvodci, kteří nám ukázali úžasná místa, která nejsou v průvodcích.",
-    },
-    {
-      question:
-        "Plánujete nějaké speciální akce nebo setkání pro své čtenáře v budoucnu?",
-      answer:
-        "Ano, máme v plánu pořádat pravidelné setkání s našimi čtenáři. Sledujte náš blog a sociální média pro aktuální informace o nadcházejících akcích.",
+        "Pokud máte rádi naše příběhy a cestovatelské tipy, podpořte nás tím, že budete sdílet naši stránku s přáteli a sledujte nás na sociálních sítích. Vaše podpora je pro náš vším!",
     },
   ];
   return (
     <div className="page faq">
       <PageCover src={cover_faq} label="FAQ" />
       <Section>
-        <div className="faqList">
-          {faqs.map((faq, index) => (
-            <FAQItem key={index} question={faq.question} answer={faq.answer} />
-          ))}
-        </div>
+        <Article center>
+          <h2>Často kladené otázky</h2>
+          <p>
+            Vítejte na naší stránce FAQ, kde jsme se snažili zodpovědět několik
+            nejčastějších otázek, které by vás mohly zajímat. Pokud však
+            nenajdete odpověď na vaši otázku, neváhejte nás kontaktovat.
+          </p>
+          <div className="faqList">
+            {faqs.map((faq, index) => (
+              <FAQItem
+                key={index}
+                question={faq.question}
+                answer={faq.answer}
+              />
+            ))}
+          </div>
+          <p>
+            Nemůžete najít odpověď na vaši otázku? Napište nám a rádi vám
+            odpovíme!
+          </p>
+          <p>Díky, že jste s námi na cestě!</p>
+        </Article>
       </Section>
     </div>
   );
