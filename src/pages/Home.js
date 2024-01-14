@@ -15,7 +15,7 @@ export default function Home() {
         label={"Vydej se na cesty s námi"}
       />
       <Section>
-        <Article size="l">
+        <Article size="l" center>
           <h2>Vítej na Našem Cestovatelském Blogu!</h2>
           <p>
             Prozkoumej neuvěřitelná dobrodružství dvou nejlepších přátel, Tondy
@@ -23,7 +23,7 @@ export default function Home() {
             a sdílejí nezapomenutelné okamžiky.
           </p>
         </Article>
-        <Article size="l">
+        <Article size="l" center>
           <h3>Všechny naše fotky</h3>
           <p>
             Naše fotogalerie ti přináší poutavé pohledy na malebná místa,
@@ -31,7 +31,7 @@ export default function Home() {
             nech se unést krásou našich fotografií a příběhů.
           </p>
         </Article>
-        <Article size="l">
+        <Article size="l" center>
           <h3>Kde nás můžeš sledovat?</h3>
           <p>
             Přidej se k nám na naší cestě, kde přátelství, dobrodružství a
@@ -39,7 +39,7 @@ export default function Home() {
             médiích, abys nezmeškal/a žádný moment!
           </p>
         </Article>
-        <Article size="l">
+        <Article size="l" center>
           <h3>Co můžeš očekávat?</h3>
           <p>
             Připrav se na inspiraci, pohodu a nádherné výhledy. Zažijeme spolu

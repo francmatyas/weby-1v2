@@ -26,12 +26,11 @@
   position: absolute;
   bottom: 8rem;
   left: 2rem;
-
-  &.center {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+}
+.pageCoverLabel.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .pageCoverTitle {
   text-transform: uppercase;
@@ -50,39 +49,33 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   cursor: pointer;
   background-color: var(--cardColor);
-
-  .FAQItemHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 8px;
-  }
-  .FAQItemHeaderChevron {
-    transition: transform 0.2s ease-in-out;
-    transform: translate(0, 6px);
-  }
-  .FAQItemBody {
-    height: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-in-out;
-  }
-
-  .FAQItemQuestion {
-    margin-bottom: 0;
-    margin-top: 8px;
-  }
-
-  &.open {
-    .FAQItemHeaderChevron {
-      transform: translate(0, 6px) rotate(180deg);
-    }
-
-    .FAQItemBody {
-      height: auto;
-      max-height: 100px;
-    }
-  }
+}
+.FAQItem .FAQItemHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.FAQItem .FAQItemHeaderChevron {
+  transition: transform 0.2s ease-in-out;
+  transform: translate(0, 6px);
+}
+.FAQItem .FAQItemBody {
+  height: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+.FAQItem .FAQItemQuestion {
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+.FAQItem.open .FAQItemHeaderChevron {
+  transform: translate(0, 6px) rotate(180deg);
+}
+.FAQItem.open .FAQItemBody {
+  height: auto;
+  max-height: 100px;
 }
 
 /* _____________BUTTON_______________ */
@@ -138,11 +131,41 @@
   width: 100%;
   background-color: white;
   height: 20rem;
+}
+.galleryGridItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
+/* _____________PLACES LINK_______________ */
+.placeLink {
+  position: relative;
+  height: 16rem;
+  border-radius: 4px;
+  overflow: hidden;
+
+  transition: transform 0.2s ease-in-out;
+}
+.placeLink:hover,
+.placeLink:focus {
+  transform: scale(1.02);
+}
+.placeLinkImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.75);
+}
+.placeLinkContent {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.placeLinkTitle {
+  text-decoration: none;
+  color: white;
+  font-size: 400;
 }

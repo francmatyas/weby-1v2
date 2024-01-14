@@ -28,3 +28,6 @@ footer {
   background-color: var(--bgColor);
   color: var(--textColor);
 }
+*:focus {
+  outline-color: var(--accentColor);
+}

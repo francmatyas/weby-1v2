@@ -10,19 +10,15 @@
   gap: 2rem;
   list-style: none;
 }
-a:visited {
-  color: var(--textColor);
-}
 .navListItem {
   text-transform: uppercase;
   font-weight: 500;
   color: var(--textColor);
 
   transition: color 0.2s ease-in-out;
-
-  a {
-    text-decoration: none;
-  }
+}
+.navListItem a {
+  text-decoration: none;
 }
 .navListItemUnderline {
   height: 2px;
@@ -30,13 +26,9 @@ a:visited {
   background-color: var(--accentColor);
   transition: background-color 0.2s ease-in-out, width 0.3s ease-in-out;
 }
-.navListItem {
-  &.active,
-  & a:hover,
-  & a:focus {
-    color: var(--textColor);
-    .navListItemUnderline {
-      width: 75%;
-    }
+.navListItem.active, .navListItem a:hover, .navListItem a:focus {
+  color: var(--textColor);
+  .navListItemUnderline {
+    width: 75%;
   }
 }

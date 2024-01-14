@@ -1,6 +1,7 @@
 import Header from "@components/Header/Header";
 import Footer from "@components/Footer/Footer";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { cloneElement, useEffect } from "react";
 
 import Home from "@pages/Home";
 import Places from "@pages/Places";
@@ -8,8 +9,15 @@ import About from "@pages/About";
 import Contact from "@pages/Contact";
 import FAQ from "@pages/FAQ";
 import Gallery from "@pages/Gallery";
+import PlacePages from "@pages/places/_exportPlaces";
 
 function App() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    document.querySelector(".appContent").scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div className={"appContainer"}>
       <Header />
@@ -17,7 +25,12 @@ function App() {
         <main className={"appMain"}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/places" element={<Places />} />
+            <Route path="/places">
+              <Route index element={<Places />} />
+              {Object.entries(PlacePages).map(([key, component]) => (
+                <Route key={key} path={key} element={cloneElement(component)} />
+              ))}
+            </Route>
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/faq" element={<FAQ />} />

@@ -7,8 +7,6 @@
 
   transition: background-color 0.3s ease-in-out;
 }
-.headerSocials {
-}
 .headerSocialsList {
   display: flex;
   flex-flow: row nowrap;
@@ -16,11 +14,6 @@
 }
 .headerSocialsItem {
   list-style: none;
- /*  color: #999; */
-}
-.headerSocialsItem a:focus,
-.headerSocialsItem:hover a {
-  /* color: #ddd; */
 }
 .headerFill {
   background-color: var(--bgColor);

@@ -4,11 +4,10 @@
   flex-flow: column;
   gap: 1.5rem;
   padding: 2rem;
-
-  p {
-    font-size: 14px;
-    margin: 4px 0;
-  }
+}
+.footer p {
+  font-size: 14px;
+  margin: 4px 0;
 }
 .footerLogo {
   width: 10rem;
@@ -17,7 +16,6 @@
 .footerRow {
   display: flex;
   justify-content: space-around;
-  /*   align-items: center; */
 }
 .footerRow.copyright {
   justify-content: center;

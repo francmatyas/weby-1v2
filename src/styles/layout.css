@@ -13,31 +13,30 @@
   flex-flow: column;
   gap: 3rem;
 }
-.article {
-  &.size-f {
-    max-width: 100%;
-  }
-  &.size-l {
-    max-width: 1000px;
-  }
-  &.size-m {
-    max-width: 800px;
-  }
-  &.size-s {
-    max-width: 600px;
-  }
-  &.center {
-    margin: 0 auto;
-  }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-bottom: 2rem;
-  }
+.article.size-f {
+  max-width: 100%;
+}
+.article.size-l {
+  max-width: 1000px;
+}
+.article.size-m {
+  max-width: 800px;
+}
+.article.size-s {
+  max-width: 600px;
+}
+.article.center {
+  margin: 0 auto;
+}
+
+.article h1,
+.article h2,
+.article h3,
+.article h4,
+.article h5,
+.article h6 {
+  margin-bottom: 2rem;
 }
 
 p {
@@ -78,11 +77,14 @@ p {
 a {
   color: var(--textColor);
   transition: color 0.2s ease-in-out;
+}
 
-  &:focus,
-  &:hover {
-    color: var(--accentColor);
-  }
+a:focus,
+a:hover {
+  color: var(--accentColor);
+}
+a:visited {
+  color: var(--textColor);
 }
 .imageLine {
   display: flex;
@@ -93,10 +95,12 @@ a {
 .imageWrapper {
   width: 100%;
   height: 24rem;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+}
+.imageWrapper.tall{
+  height: 42rem;
+}
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
