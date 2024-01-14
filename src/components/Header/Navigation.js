@@ -31,11 +31,6 @@ export default function Navigation() {
   return (
     <nav className={"nav"}>
       <ul className={"navList"}>
-        <li>
-          <Link to="/">
-            <img height={48} src={logo} alt="logo" className={"navLogo"} />
-          </Link>
-        </li>
         {Object.values(links).map((link) => (
           <NavLink
             key={link.href}

@@ -68,6 +68,7 @@ h3 {
   text-decoration: underline;
   text-underline-offset: 8px;
   text-decoration-color: var(--accentColor);
+  line-height: 32px;
 }
 p {
   font-weight: 400;
@@ -103,4 +104,32 @@ a:visited {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+
+
+/* _____________TABLET______________ */
+@media screen and (max-width: 768px) {
+
+}
+
+/* _____________MOBILE______________ */
+@media screen and (max-width: 480px) {
+
+}
+
+
+/* _____________TABLET______________ */
+@media screen and (max-width: 768px) {
+  .imageLine {
+    flex-flow: row wrap;
+  }
+
+}
+
+/* _____________MOBILE______________ */
+@media screen and (max-width: 480px) {
+  .imageLine {
+    flex-flow: column;
+  }
 }
