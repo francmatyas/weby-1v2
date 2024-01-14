@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="footerCol">
           <h3>CestaBezKonce.cz</h3>
           <p>Studentský zápočtový projekt</p>
-          <p>Aktualizováno 10.1.2024</p>
+          <p>Aktualizováno 14.1.2024</p>
         </div>
         <div className="footerCol">
           <h3>Provozovatel</h3>
