@@ -1,6 +1,9 @@
 import PageCover from "@components/Elements/PageCover";
 import cover_about from "@assets/cover_about.jpg";
 import { Section, Article } from "@components/Layout/Layout";
+import about_1 from "@assets/about_1.jpg";
+import about_2 from "@assets/about_2.jpg";
+import about_3 from "@assets/about_3.jpg";
 
 export default function About() {
   return (
@@ -30,6 +33,14 @@ export default function About() {
             každý les za domov. Mé odhodlání zdolávat překážky spojené s láskou
             k přírodě vytvářejí neuvěřitelnou kombinaci pro každé dobrodružství.
           </p>
+          <div className="imageLine">
+            <div className="imageWrapper">
+              <img src={about_1} alt="Čenda v horách"/>
+            </div>
+            <div className="imageWrapper">
+              <img src={about_2} alt="horolezec Tonda, který leze ve skalách"/>
+            </div>
+          </div>
         </Article>
         <Article size="m" center>
           <h3>Naše Kroniky Touhy po Cestování</h3>
@@ -65,6 +76,12 @@ export default function About() {
             dobrodružství.
           </p>
           <p>Díky, že jste součástí naší cesty!</p>
+
+          <div className="imageLine">
+            <div className="imageWrapper">
+              <img src={about_3} alt="Tonda, který odpočívá a kochá se výhledy v horách"/>
+            </div>
+          </div>
         </Article>
       </Section>
     </div>
