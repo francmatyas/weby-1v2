@@ -48,6 +48,10 @@ export default function Header() {
     if (device !== "desktop") setMenuOpen(false);
   }, [pathname]);
 
+  useEffect(() => {
+    if (device === "desktop") setMenuOpen(false);
+  }, [device]);
+
   const headerContent = (
     <>
       <div className="headerNavigation">
@@ -108,7 +112,7 @@ export default function Header() {
       )}
       {menuOpen && (
         <div className={"headerMenu"}>
-          <div className={"headerMenuContent"}>{headerContent}</div>
+          {headerContent}
         </div>
       )}
     </header>
