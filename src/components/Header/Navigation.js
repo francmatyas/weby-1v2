@@ -1,5 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
-import logo from "assets/logo.png";
+import { useLocation } from "react-router-dom";
 import NavLink from "./NavLink";
 
 export default function Navigation() {

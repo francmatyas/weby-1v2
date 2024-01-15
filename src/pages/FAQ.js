@@ -16,14 +16,14 @@ export default function FAQ() {
         "Sledujte náš blog a sociální média pro denní dávku inspirace. Fotografie, příběhy a tipy na cestování vám přiblíží naše zážitky a nabídnou vám pohled na svět našima očima.",
     },
     {
-      question: " Máte nějaké oblíbené destinace?",
+      question: "Máte nějaké oblíbené destinace?",
       answer:
         "Ano, máme! Milujeme horizontální rozmanitost naší planety. Od himálajských vrcholů po pralesy Amazonského pralesa – každé místo nás oslovuje svým vlastním způsobem.",
     },
     {
       question: "Jak mohu navázat kontakt?",
       answer:
-        "Jsme rádi, když se na nás obracíte! Vyplňte kontaktní formulář na naší stránce Kontakt nebo nám pište přímo na contact@adventure.com.",
+        "Jsme rádi, když se na nás obracíte! Vyplňte kontaktní formulář na naší stránce Kontakt nebo nám pište přímo na kontakt@cestabezkonce.cz.",
     },
     {
       question: "Můžeme sdílet naše vlastní cestovatelské příběhy s vámi?",
