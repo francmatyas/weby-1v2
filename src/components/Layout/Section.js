@@ -1,8 +1,8 @@
-export default function Section(props) {
+export default function Article(props) {
   const { children, className = "", contentClassName = "" } = props;
   return (
-    <section className={`sectionWrapper ${className}`}>
-      <div className={`sectionContent ${contentClassName}`}>{children}</div>
-    </section>
+    <article className={`articleWrapper ${className}`}>
+      <div className={`articleContent ${contentClassName}`}>{children}</div>
+    </article>
   );
 }

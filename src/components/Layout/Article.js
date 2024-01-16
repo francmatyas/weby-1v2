@@ -1,12 +1,12 @@
-export default function Article(props) {
+export default function Section(props) {
   const { children, className = "", size = "l", center } = props;
   return (
-    <article
-      className={`article ${className} ${`size-${size}`} ${
+    <section
+      className={`section ${className} ${`size-${size}`} ${
         center ? "center" : ""
       }`}
     >
       {children}
-    </article>
+    </section>
   );
 }

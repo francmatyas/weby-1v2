@@ -23,7 +23,7 @@ ul {
 }
 
 .background,
-section,
+article,
 footer {
   background-color: var(--bgColor);
   color: var(--textColor);

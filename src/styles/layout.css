@@ -1,8 +1,8 @@
-.sectionWrapper {
+.articleWrapper {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.sectionContent {
+.articleContent {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
@@ -14,25 +14,25 @@
   gap: 3rem;
 }
 
-.article.size-f {
+.section.size-f {
   max-width: 100%;
 }
-.article.size-l {
+.section.size-l {
   max-width: 1000px;
 }
-.article.size-m {
+.section.size-m {
   max-width: 800px;
 }
-.article.size-s {
+.section.size-s {
   max-width: 600px;
 }
-.article.center {
+.section.center {
   margin: 0 auto;
 }
 
-.article h1,
-.article h2,
-.article h3 {
+.section h1,
+.section h2,
+.section h3 {
   margin-bottom: 2rem;
 }
 
