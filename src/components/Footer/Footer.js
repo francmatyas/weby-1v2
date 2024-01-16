@@ -33,27 +33,43 @@ export default function Footer() {
           <h3>Sociální sítě</h3>
           <ul className={"footerSocialsList"}>
             <li className={"footerSocialsItem"} title="Instagram">
-              <a href="https://www.instagram.com/" target="_blank">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Instagram
               </a>
             </li>
             <li className={"footerSocialsItem"} title="Facebook">
-              <a href="https://www.facebook.com/" target="_blank">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Facebook
               </a>
             </li>
             <li className={"footerSocialsItem"} title="Youtube">
-              <a href="https://www.youtube.com/" target="_blank">
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Youtube
               </a>
             </li>
             <li className={"footerSocialsItem"} title="Patreon">
-              <a href="https://www.patreon.com/" target="_blank">
+              <a
+                href="https://www.patreon.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Patreon
               </a>
             </li>
             <li className={"footerSocialsItem"} title="X (Twitter)">
-              <a href="https://www.x.com/" target="_blank">
+              <a href="https://www.x.com/" target="_blank" rel="noreferrer">
                 X (Twitter)
               </a>
             </li>

@@ -47,13 +47,22 @@ export default function Home() {
           </p>
           <div className="imageLine">
             <div className="imageWrapper">
-              <img src={home_1} />
+              <img
+                src={home_1}
+                alt="fotka hory v inverzi, při východu slunce"
+              />
             </div>
             <div className="imageWrapper">
-              <img src={home_2} />
+              <img
+                src={home_2}
+                alt="výhled do lehce zamlžené krajiny za východu slunce"
+              />
             </div>
             <div className="imageWrapper">
-              <img src={home_3} />
+              <img
+                src={home_3}
+                alt="západ slunce do moře na kamenitém pobřeží"
+              />
             </div>
           </div>
         </Section>
