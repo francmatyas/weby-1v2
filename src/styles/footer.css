@@ -28,6 +28,12 @@
   gap: 8px;
   align-items: center;
 }
+.footerSocialsList{
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+}
 
 /* _____________TABLET______________ */
 @media screen and (max-width: 768px) {

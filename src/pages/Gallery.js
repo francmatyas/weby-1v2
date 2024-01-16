@@ -9,8 +9,8 @@ export default function Gallery() {
   return (
     <div className="page gallery">
       <PageCover src={cover_gallery} label="Galerie" />
-      <Section>
-        <Article center>
+      <Article>
+        <Section center>
           <h2>Společné okamžiky na cestě světem</h2>
           <p>
             Vítej na naší virtuální pouti napříč světem, kde se vydáváme na
@@ -20,9 +20,9 @@ export default function Gallery() {
             které tě pozvou na putování napříč krajinami a přátelstvím. Připoj
             se k nám a prohlédni si svět očima dvou neoddělitelných přátel.
           </p>
-        </Article>
+        </Section>
         <GalleryGrid src={gallerySrc} />
-      </Section>
+      </Article>
     </div>
   );
 }

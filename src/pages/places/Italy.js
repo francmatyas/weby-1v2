@@ -12,8 +12,8 @@ export default function Italy() {
   return (
     <div className="placesDetail">
       <PageCover src={cover_italy} label="Itálie" />
-      <Section>
-        <Article center>
+      <Article>
+        <Section center>
           <h2>Itálie</h2>
           <p>
             Vítejte v zemi vášně, umění a vynikající kuchyně, to je Itálie. Od
@@ -21,15 +21,15 @@ export default function Italy() {
             Amalfi, každý roh této země přináší vzrušující mix historie, kultury
             a nádhery.
           </p>
-        </Article>
-        <Article center>
+        </Section>
+        <Section center>
           <h3>Kulinářské Zážitky</h3>
           <p>
             V Itálii se každé jídlo stává událostí. Ochutnejte autentickou
             italskou kávu, lahodné těstoviny, a nezapomeňte na pravý italský
             gelato. Každý kousek chutí je cestou do srdce italské kuchyně.
           </p>
-        </Article>
+        </Section>
         <div className="imageLine">
           <div className="imageWrapper">
             <img
@@ -41,22 +41,22 @@ export default function Italy() {
             <img src={italy_5} alt="Florencie" />
           </div>
         </div>
-        <Article center>
+        <Section center>
           <h3>Umělecké Dědictví</h3>
           <p>
             Itálie, kolébka renesance a umění. Prozkoumejte mistrovská díla v
             galeriích ve Florencii, obdivujte Michelangelovy sochy a procházejte
             se mezi památkami Říma, které vyprávějí příběhy minulosti.
           </p>
-        </Article>
-        <Article center>
+        </Section>
+        <Section center>
           <h3>Přírodní Krása</h3>
           <p>
             Od Toskánských vinic až po slunné pláže na Sicílii, příroda v Itálii
             pohladí duši. Každý region nabízí jedinečné scenérie, od vrcholků
             hor po azurově modré moře.
           </p>
-        </Article>
+        </Section>
         <div className="imageLine">
           <div className="imageWrapper">
             <img src={italy_1} alt="dolomity v Itálii" />
@@ -68,23 +68,23 @@ export default function Italy() {
             <img src={italy_3} alt="hory v Itálii" />
           </div>
         </div>
-        <Article center>
+        <Section center>
           <h3>Životní Styl a Móda</h3>
           <p>
             Prožijte italský životní styl plný elegance, vášně a módního vkusu.
             Milán, hlavní město módy, vás přivítá s butiky slavných návrhářů a
             nejnovějšími trendy.
           </p>
-        </Article>
-        <Article center>
+        </Section>
+        <Section center>
           <h3>Historická Města</h3>
           <p>
             Přeskočte do minulosti procházkou historickými uličkami Benátek, kde
             se každý krok stává cestou do doby středověku. Každé město v Itálii
             skrývá své vlastní tajemství a fascinující historii.
           </p>
-        </Article>
-      </Section>
+        </Section>
+      </Article>
     </div>
   );
 }

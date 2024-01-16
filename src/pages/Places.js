@@ -18,8 +18,8 @@ export default function Places() {
   return (
     <div className="page places">
       <PageCover src={cover_places} label="Místa" />
-      <Section>
-        <Article center>
+      <Article>
+        <Section center>
           <h2>Destinace, Které Očarují</h2>
           <p>
             Vítejte na naší stránce plné inspirace a dobrodružství! Procházejte
@@ -30,14 +30,14 @@ export default function Places() {
             dobrodružství. Zapojte se do našeho světa a objevujte krásy, které
             čekají na vás.
           </p>
-        </Article>
+        </Section>
 
         <div className="placesLinks">
           {places.map((place) => (
             <PlaceLink key={place.id} place={place} />
           ))}
         </div>
-      </Section>
+      </Article>
     </div>
   );
 }

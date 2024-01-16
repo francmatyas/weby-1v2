@@ -7,17 +7,17 @@ export default function Contact() {
   return (
     <div className="page contact">
       <PageCover src={cover_contact} label="Kontakt" />
-      <Section>
-        <Article size="m" center>
+      <Article>
+        <Section size="m" center>
           <h2>Kontaktujte nás</h2>
           <p>
             Děkujeme, že jste se rozhodli nás kontaktovat! Jsme rádi, že můžeme
             komunikovat s našimi čtenáři a přáteli dobrodružství. Pro snadnější
             orientaci jsou zde některé způsoby, jak nás můžete dosáhnout.
           </p>
-        </Article>
+        </Section>
         <ContactForm className="contactPageForm"/>
-      </Section>
+      </Article>
     </div>
   );
 }

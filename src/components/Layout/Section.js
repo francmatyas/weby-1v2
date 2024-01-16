@@ -1,8 +1,12 @@
-export default function Article(props) {
-  const { children, className = "", contentClassName = "" } = props;
+export default function Section(props) {
+  const { children, className = "", size = "l", center } = props;
   return (
-    <article className={`articleWrapper ${className}`}>
-      <div className={`articleContent ${contentClassName}`}>{children}</div>
-    </article>
+    <section
+      className={`section ${className} ${`size-${size}`} ${
+        center ? "center" : ""
+      }`}
+    >
+      {children}
+    </section>
   );
 }

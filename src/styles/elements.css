@@ -169,3 +169,33 @@
   color: white;
   font-size: 400;
 }
+
+.table {
+  width: 100%;
+  max-width: 1000px;
+
+  border-collapse: collapse;
+  border-radius: 4px;
+  border-style: hidden;
+  box-shadow: 0 0 0 1px var(--accentColor);
+}
+.table thead {
+  background-color: var(--accentColor);
+  color: var(--bgColor);
+}
+.table tr {
+  border-bottom: 1px solid var(--accentColor);
+}
+.table tr:last-child {
+  border-bottom: none;
+}
+
+.table th,
+.table td {
+  padding: 8px 16px;
+  border-right: 1px solid var(--accentColor);
+}
+.table th:last-child,
+.table td:last-child {
+  border-right: none;
+}

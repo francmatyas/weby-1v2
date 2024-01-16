@@ -39,8 +39,8 @@ export default function FAQ() {
   return (
     <div className="page faq">
       <PageCover src={cover_faq} label="FAQ" />
-      <Section>
-        <Article center>
+      <Article>
+        <Section center>
           <h2>Často kladené otázky</h2>
           <p>
             Vítejte na naší stránce FAQ, kde jsme se snažili zodpovědět několik
@@ -61,8 +61,8 @@ export default function FAQ() {
             odpovíme!
           </p>
           <p>Díky, že jste s námi na cestě!</p>
-        </Article>
-      </Section>
+        </Section>
+      </Article>
     </div>
   );
 }

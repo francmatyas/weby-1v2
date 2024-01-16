@@ -30,6 +30,36 @@ export default function Footer() {
           </p>
         </div>
         <div className="footerCol">
+          <h3>Sociální sítě</h3>
+          <ul className={"footerSocialsList"}>
+            <li className={"footerSocialsItem"} title="Instagram">
+              <a href="https://www.instagram.com/" target="_blank">
+                Instagram
+              </a>
+            </li>
+            <li className={"footerSocialsItem"} title="Facebook">
+              <a href="https://www.facebook.com/" target="_blank">
+                Facebook
+              </a>
+            </li>
+            <li className={"footerSocialsItem"} title="Youtube">
+              <a href="https://www.youtube.com/" target="_blank">
+                Youtube
+              </a>
+            </li>
+            <li className={"footerSocialsItem"} title="Patreon">
+              <a href="https://www.patreon.com/" target="_blank">
+                Patreon
+              </a>
+            </li>
+            <li className={"footerSocialsItem"} title="X (Twitter)">
+              <a href="https://www.x.com/" target="_blank">
+                X (Twitter)
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="footerCol">
           <h3>Zdroje</h3>
           <p>
             Images designed by{" "}

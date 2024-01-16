@@ -14,8 +14,8 @@ export default function Iceland() {
   return (
     <div className="placesDetail">
       <PageCover src={cover_iceland} label="Island" />
-      <Section>
-        <Article center>
+      <Article>
+        <Section center>
           <h2>Island</h2>
           <p>
             Vítejte na Islandu, zemi ohromující přírodní krásy, kde se setkávají
@@ -26,13 +26,13 @@ export default function Iceland() {
             nekonečných zážitků. Zapojte se do našeho světa a objevujte krásy,
             které na vás čekají.
           </p>
-        </Article>
+        </Section>
         <div className="imageLine">
           <div className="imageWrapper tall">
             <img src={iceland_2} alt="Tonda a vodopád Skogáfos na islandu" />
           </div>
         </div>
-        <Article center>
+        <Section center>
           <h3>Cestování a Dobrodružství</h3>
           <p>
             Island - domov nekonečných dobrodružství. Prozkoumejte prastaré
@@ -40,7 +40,7 @@ export default function Iceland() {
             sledujte taneční světlo polární záře na obloze. Zde je každý krok
             cestou do příběhu.
           </p>
-        </Article>
+        </Section>
         <div className="imageLine">
           <div className="imageWrapper">
             <img src={iceland_4} alt="slunečné údolí" />
@@ -52,22 +52,22 @@ export default function Iceland() {
             />
           </div>
         </div>
-        <Article center>
+        <Section center>
           <h3>Geotermalní Krása</h3>
           <p>
             V srdci Islandu pulsuje síla Země. Geotermální jezera, horké prameny
             a vřící lávová pole vytvářejí surreální krajinu, která nám
             připomíná, že příroda je nejlepší umělec.
           </p>
-        </Article>
-        <Article center>
+        </Section>
+        <Section center>
           <h3>Kulturní Poklady</h3>
           <p>
             Island je domovem nejen přírodních divů, ale i bohaté kultury.
             Objevte tradiční islandské legendy, folklor a umění, které odrážejí
             odvahu a hrdinství této národnosti.
           </p>
-        </Article>
+        </Section>
         <div className="imageLine">
           <div className="imageWrapper">
             <img src={iceland_7} alt="vodopád Haifos" />
@@ -79,22 +79,73 @@ export default function Iceland() {
             <img src={iceland_6} alt="vodopád Hengifoss" />
           </div>
         </div>
-        <Article center>
+        <Section center>
           <h3>Fotografický Ráj</h3>
           <p>
             Pro fotografy je Island nekonečným rájem. Každý roh nabízí jedinečné
             kompozice, od ledovců po polární záři. Vytvářejte vzpomínky v podobě
             snímků, které vypráví příběhy o tomto magickém ostrově.
           </p>
-        </Article>
-        <Article center>
+        </Section>
+        <Section center>
           <h3>Romantika na Islandu</h3>
           <p>
             Prožijte romantiku na Islandu, kde se vlající zelené polární záře,
             horské výhledy a klidné jezera spojují, tvoříce ideální prostředí
             pro nezapomenutelné chvíle ve dvou.
           </p>
-        </Article>
+        </Section>
+        <Section center>
+          <h3>Kolik tě bude cesta stát?</h3>
+          <p>
+            Tato tabulka vám poskytne představu o odhadovaných nákladech na
+            ubytování, dopravu, stravování a další aktivity. Nezapomeňte, že
+            ceny mohou být ovlivněné sezónou a individuálními preferencemi.
+            Tento odhad je založen na 7denním pobytu pro jednu osobu.
+          </p>
+          <table className="table">
+            <thead>
+              <tr>
+                <th>Položka nákladů</th>
+                <th>Částka (v CZK)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Letenka</td>
+                <td>4 000 - 15 000</td>
+              </tr>
+              <tr>
+                <td>Ubytování (7 nocí)</td>
+                <td>6 000 - 20 000</td>
+              </tr>
+              <tr>
+                <td>Půjčení auta + palivo</td>
+                <td>10 000 - 40 000</td>
+              </tr>
+              <tr>
+                <td>Jídlo a nápoje</td>
+                <td>8 000 - 15 000</td>
+              </tr>
+              <tr>
+                <td>Vstupy a aktivity</td>
+                <td>6 000 - 12 000</td>
+              </tr>
+              <tr>
+                <td>Nečekané náklady</td>
+                <td>3 000 - 5 000</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Celkový odhad</strong>
+                </td>
+                <td>
+                  <strong>37 000 - 117 000</strong>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </Section>
 
         <div className="imageLine">
           <div className="imageWrapper tall">
@@ -104,7 +155,7 @@ export default function Iceland() {
             <img src={iceland_1} alt="malebný kaňon s řekou" />
           </div>
         </div>
-      </Section>
+      </Article>
     </div>
   );
 }

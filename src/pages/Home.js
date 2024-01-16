@@ -14,32 +14,32 @@ export default function Home() {
         labelCLass="homePageLabel"
         label={"Vydej se na cesty s námi"}
       />
-      <Section>
-        <Article size="l" center>
+      <Article>
+        <Section size="l" center>
           <h2>Vítej na Našem Cestovatelském Blogu!</h2>
           <p>
             Prozkoumej neuvěřitelná dobrodružství dvou nejlepších přátel, Tondy
             a Čendy, kteří se společně vydávají na cesty, objevují nové kultury
             a sdílejí nezapomenutelné okamžiky.
           </p>
-        </Article>
-        <Article size="l" center>
+        </Section>
+        <Section size="l" center>
           <h3>Všechny naše fotky</h3>
           <p>
             Naše fotogalerie ti přináší poutavé pohledy na malebná místa,
             vzrušující dobrodružství a spontánní okamžiky smíchu. Připoutej se a
             nech se unést krásou našich fotografií a příběhů.
           </p>
-        </Article>
-        <Article size="l" center>
+        </Section>
+        <Section size="l" center>
           <h3>Kde nás můžeš sledovat?</h3>
           <p>
             Přidej se k nám na naší cestě, kde přátelství, dobrodružství a
             nekonečné objevování spojují své síly. Sleduj nás na sociálních
             médiích, abys nezmeškal/a žádný moment!
           </p>
-        </Article>
-        <Article size="l" center>
+        </Section>
+        <Section size="l" center>
           <h3>Co můžeš očekávat?</h3>
           <p>
             Připrav se na inspiraci, pohodu a nádherné výhledy. Zažijeme spolu
@@ -56,8 +56,8 @@ export default function Home() {
               <img src={home_3} />
             </div>
           </div>
-        </Article>
-      </Section>
+        </Section>
+      </Article>
     </div>
   );
 }
